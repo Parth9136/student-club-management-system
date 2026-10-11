@@ -1,0 +1,91 @@
+# Root ignore rules for the full EL_CLUB_SQL repository
+
+# Node dependencies
+node_modules/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Runtime artifacts
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Build and output directories
+coverage/
+.nyc_output
+.cache
+.parcel-cache
+.next/
+.nuxt/
+dist/
+out/
+.docusaurus/
+.vuepress/
+.temp/
+.vitepress/
+.vitepress/dist/
+.vitepress/cache/
+
+# Tool caches
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+.eslintcache
+.stylelintcache
+.node_repl_history
+.yarn-integrity
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp
+.pnp.js
+
+# Misc
+.DS_Store
+.lock-wscript
+lib-cov/
+bower_components/
+jspm_packages/
+serverless/
+.serverless/
+.dynamodb/
+.tern-port
+.vscode-test
+*.tgz
+
+# Frontend-specific ignores
+/frontend/node_modules/
+/frontend/build/
+/frontend/dist/
+/frontend/.env
+/frontend/.env.local
+/frontend/.env.development.local
+/frontend/.env.test.local
+/frontend/.env.production.local
+
+# Backend-specific ignores
+/backend/node_modules/
+/backend/build/
+/backend/dist/
+/backend/.env
+/backend/.env.local
+/backend/.env.development.local
+/backend/.env.test.local
+/backend/.env.production.local
+

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creative Font Animation</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:opsz,wght@1..1000&display=swap" rel="stylesheet">
+  <style>
+    /* Keyframes for the font weight animation */
+    @keyframes letter-breathe {
+      0% {
+        font-variation-settings: 'wght' 300; /* Start with a light weight */
+      }
+      50% {
+        font-variation-settings: 'wght' 700; /* Midway, increase to a medium weight */
+      }
+      100% {
+        font-variation-settings: 'wght' 1000; /* End with the heaviest weight */
+      }
+    }
+
+    /* Styling for the animated text */
+    .name {
+      font-family: 'Playfair Display', serif; /* Elegant and creative font */
+      font-size: clamp(20px, 5vw, 30px); /* Responsive font size */
+      text-align: center; /* Center-align text */
+      color: #333; /* Neutral color */
+      animation: letter-breathe 3s ease-in-out infinite; /* Smooth animation */
+      letter-spacing: 0.05em; /* Slight letter spacing for clarity */
+      margin: 20px;
+    }
+
+    /* Creative background */
+    body {
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4); /* Soft gradient background */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="name">Creative Elegance</div>
+</body>
+</html>
